@@ -11,30 +11,30 @@
 </head>
 <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid navbar-custom">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#" id="logo">Chason Law</a>
-        </div>
-      
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right navbar-right-custom">
-            <li><a href="/contact.html">Contact</a></li><span class="pipe"></span>
-            <li><a href="/portfolio.html">Portfolio</a></li><span class="pipe"></span>
-            <li><a href="/">About</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html">Chason Law</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <hr>
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">About</a>
+            </li>
+            <hr >
+            <li class="nav-item active">
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <hr>
+            <li class="nav-item active">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!-- End of navbar -->
-
+<div id="container1">
 
     <div class="wrap">
       <div class="container">
@@ -45,15 +45,15 @@
               <hr class="contact-hr"/>
               <div class="form-group">
                 <label class="label-name" for="name">Name</label>
-                <input type="text" id="name_input" name="user_name" />
+                <input type="text" id="name_input" placeholder="John Doe" name="user_name" />
               </div>
               <div class="form-group">
                 <label class="label-mail" for="mail">E-mail</label>
-                <input type="email" id="mail_input" name="user_mail" />
+                <input type="email" id="mail_input" placeholder="Example@domain.com" name="user_mail" />
               </div>
               <div class="form-group">
                 <label class="label-msg" for="msg">Message</label><br />
-                <textarea id="msg" name="user_message_input" cols=600></textarea>
+                <textarea id="msg" placeholder="Your message here" name="user_message_input" cols=600></textarea>
               </div>
               <button class="submit-btn">Submit</button>
             </form>
@@ -64,24 +64,27 @@
               <div class="connect-with-me-content">
                 <h1 class="connect-with-me-header">Connect With Me</h1>
                 <hr />
-                <div id="images">
-                  <img src="assets/imgs/github.png" alt="" class="connect-with-me-photo">
-                  <img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo">
-                  <img src="assets/imgs/stackover2.png" alt="" class="connect-with-me-photo">
+                <div class="card">
+                  <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_color-512.png" class="card-img-top" alt="GitHub">
+                  <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png" class="card-img-top" alt="LinkedIN">
+                  <img src="https://cdn1.iconfinder.com/data/icons/picons-social/57/stackoverflow_rounded-512.png" class="card-img-top" alt="Stackoverflow">
+                  <div class="card-body">
+                    <h5 class="card-title">Contact Me</h5>
+                    <p class="card-text"></p>
+                  </div>
                 </div>
-              </div>
             </section>
           
           </div>
         </section>
       </div>
     </div>
-  
+</div>
 
     <!-- Start of footer -->
     <footer class="footer navbar-fixed-bottom">
       <div class="two-toned-footer-color"></div>
-      <p class="text-muted text-muted-footer text-center">
+      <p class="text text-footer text-center">
         &copy; Copyright 2019 Chason Law
       </p>
     </footer>
